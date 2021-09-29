@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let coinImage = document.querySelector('#coin-image');
 
+    let statusMessage = document.querySelector('#flip-result');
+
+
     let coinFace = [ 
         {   
             name: 'heads', 
@@ -47,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCoinImage(coinFace[randomFlip].source)
         
        calculateScore(coinFace[randomFlip].name);
+       statusMessage.textContent = `You Flipped ${coinFace[randomFlip].name}`
 
     }
 
@@ -103,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector(`#heads-percent`).textContent = scoreStat.heads.percentage+'%';
         document.querySelector(`#tails`).textContent = scoreStat.tails.score;
         document.querySelector(`#heads`).textContent = scoreStat.heads.score;
+        document.querySelector('#flip-result').textContent = "Let's Get Rolling!"
         
 
 
