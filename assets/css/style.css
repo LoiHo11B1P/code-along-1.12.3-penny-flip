@@ -69,3 +69,23 @@ td {
     padding: 5px;
     font-weight: bold;
 }
+
+#button-panel {
+    border: orange;
+    border-width: 2px; 
+    border-style: inset;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+}
+
+#msg-panel
+ {
+     padding-top: 20px;
+     padding-bottom: 20px;
+
+ }
+
+ #flip-result {
+     font-size: 30px;
+     color: orange;
+ }
